@@ -68,8 +68,11 @@ export const LineChart: React.FC<LineChartProps> = ({
                 beginAtZero: false,
                 grid: {
                   display: true,
-                  drawBorder: false,
                   color: '#e5e7eb',
+                  // Removed drawBorder property
+                },
+                border: {
+                  display: false,
                 },
                 ticks: {
                   color: '#6b7280',
@@ -77,6 +80,9 @@ export const LineChart: React.FC<LineChartProps> = ({
               },
               x: {
                 grid: {
+                  display: false,
+                },
+                border: {
                   display: false,
                 },
                 ticks: {
@@ -167,8 +173,11 @@ export const BarChart: React.FC<BarChartProps> = ({
                 beginAtZero: true,
                 grid: {
                   display: true,
-                  drawBorder: false,
                   color: '#e5e7eb',
+                  // Removed drawBorder property
+                },
+                border: {
+                  display: false,
                 },
                 ticks: {
                   color: '#6b7280',
@@ -176,6 +185,9 @@ export const BarChart: React.FC<BarChartProps> = ({
               },
               x: {
                 grid: {
+                  display: false,
+                },
+                border: {
                   display: false,
                 },
                 ticks: {
